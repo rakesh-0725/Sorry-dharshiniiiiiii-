@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Dharshiniiiiiii 💗</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --rose:      #f472b6;
+    --rose-deep: #db2777;
+    --blush:     #fce7f3;
+    --lilac:     #f5d0fe;
+    --cream:     #fff1f8;
+    --glass:     rgba(255,255,255,0.18);
+    --glass-b:   rgba(255,200,230,0.22);
+    --shadow:    rgba(219,39,119,0.15);
+    --text-dark: #6b21a8;
+    --text-mid:  #9d174d;
+    --text-soft: #be185d;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 30%, #f3e8ff 60%, #fdf2f8 100%);
+    min-height: 100vh;
+    color: var(--text-mid);
+    overflow-x: hidden;
+  }
+
+  /* ── FLOATING PARTICLES ── */
+  #particles { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+  .particle {
+    position: absolute;
+    font-size: clamp(10px, 2vw, 18px);
+    animation: floatUp linear infinite;
+    opacity: 0;
+    user-select: none;
+  }
+  @keyframes floatUp {
+    0%   { opacity: 0; transform: translateY(100vh) rotate(0deg); }
+    10%  { opacity: .7; }
+    90%  { opacity: .5; }
+    100% { opacity: 0; transform: translateY(-10vh) rotate(360deg); }
+  }
+
+  /* ── LAYOUT ── */
+  section {
+    position: relative;
+    z-index: 1;
+    padding: clamp(60px, 10vw, 120px) clamp(20px, 6vw, 80px);
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  /* ── GLASS CARD ── */
+  .glass {
+    background: var(--glass);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.45);
+    border-radius: 28px;
+    box-shadow: 0 8px 40px var(--shadow), inset 0 1px 0 rgba(255,255,255,0.6);
+    padding: clamp(28px, 6vw, 56px);
+  }
+
+  /* ── TYPOGRAPHY ── */
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.25;
+  }
+  h1 { font-size: clamp(2rem, 8vw, 3.8rem); color: var(--rose-deep); }
+  h2 { font-size: clamp(1.5rem, 5vw, 2.4rem); color: var(--text-dark); margin-bottom: 1.2rem; }
+  h3 { font-size: clamp(1.1rem, 3.5vw, 1.5rem); color: var(--text-soft); }
+  p  { font-size: clamp(1rem, 2.5vw, 1.15rem); line-height: 1.85; color: var(--text-mid); max-width: 60ch; }
+  em { font-style: italic; color: var(--rose-deep); }
+
+  .subtitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: clamp(0.95rem, 3vw, 1.2rem);
+    letter-spacing: 0.04em;
+    color: var(--text-soft);
+    margin-top: 0.5rem;
+  }
+
+  /* ── SECTION LABELS ── */
+  .section-label {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  /* ── DIVIDER ── */
+  .petal-divider {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 10px 0;
+    letter-spacing: 0.5rem;
+    opacity: 0.55;
+  }
+
+  /* ────────────────────────────────
+     SECTION 1 — OPENING HERO
+  ──────────────────────────────── */
+  #hero {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 24px;
+    max-width: 100%;
+  }
+
+  .hero-butterfly {
+    font-size: clamp(3rem, 12vw, 7rem);
+    animation: wingBeat 2.2s ease-in-out infinite;
+    display: block;
+    margin-bottom: 24px;
+    filter: drop-shadow(0 4px 24px rgba(244,114,182,0.55));
+  }
+  @keyframes wingBeat {
+    0%, 100% { transform: scaleX(1) rotate(-4deg); }
+    50%       { transform: scaleX(0.82) rotate(4deg); }
+  }
+
+  #hero h1 { margin-bottom: 10px; }
+
+  #hero .from-line {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(1rem, 3.5vw, 1.3rem);
+    color: var(--text-soft);
+    margin: 8px 0 36px;
+  }
+
+  .btn-heart {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 38px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-style: italic;
+    background: linear-gradient(135deg, var(--rose), var(--rose-deep));
+    color: #fff;
+    box-shadow: 0 6px 30px rgba(219,39,119,0.4), 0 1px 0 rgba(255,255,255,0.3) inset;
+    transition: transform 0.18s, box-shadow 0.18s;
+    text-decoration: none;
+  }
+  .btn-heart:hover, .btn-heart:focus {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(219,39,119,0.5);
+    outline: none;
+  }
+  .btn-heart:active { transform: translateY(0) scale(0.98); }
+
+  /* pulse ring */
+  .pulse-ring {
+    position: relative;
+    display: inline-block;
+  }
+  .pulse-ring::after {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border-radius: 50px;
+    border: 2px solid var(--rose);
+    opacity: 0;
+    animation: ringPulse 2.4s ease-out infinite;
+  }
+  @keyframes ringPulse {
+    0%   { opacity: .6; transform: scale(1); }
+    100% { opacity: 0;  transform: scale(1.25); }
+  }
+
+  /* ── SCROLL CUE ── */
+  .scroll-hint {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    animation: bounceDown 1.8s ease-in-out infinite;
+    opacity: 0.5;
+  }
+  @keyframes bounceDown {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50%       { transform: translateX(-50%) translateY(9px); }
+  }
+
+  /* ────────────────────────────────
+     SECTION 2 — APOLOGY
+  ──────────────────────────────── */
+  #apology { text-align: center; }
+  #apology .glass { text-align: left; }
+  #apology p + p { margin-top: 1.1rem; }
+
+  .glow-heart {
+    font-size: 2.8rem;
+    animation: glowPulse 2s ease-in-out infinite;
+    display: block;
+    text-align: center;
+    margin: 0 auto 24px;
+  }
+  @keyframes glowPulse {
+    0%, 100% { filter: drop-shadow(0 0 6px rgba(244,114,182,0.5)); transform: scale(1); }
+    50%       { filter: drop-shadow(0 0 22px rgba(219,39,119,0.8)); transform: scale(1.12); }
+  }
+
+  /* ────────────────────────────────
+     SECTION 3 & 4 — MEMORIES
+  ──────────────────────────────── */
+  .memory-section { text-align: center; }
+  .memory-emoji {
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    margin-bottom: 16px;
+    display: block;
+    animation: sway 4s ease-in-out infinite;
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(-5deg); }
+    50%       { transform: rotate(5deg); }
+  }
+  .memory-section .glass { text-align: left; margin-top: 24px; }
+  .memory-section p + p { margin-top: 1rem; }
+
+  /* ────────────────────────────────
+     SECTION 5 — KORANGU
+  ──────────────────────────────── */
+  #korangu { text-align: center; }
+  #korangu .glass { text-align: left; }
+  #korangu p + p { margin-top: 1rem; }
+  .monkey-bounce {
+    font-size: clamp(2.8rem, 10vw, 5.5rem);
+    display: block;
+    margin-bottom: 14px;
+    animation: monkeyBounce 1.5s ease-in-out infinite;
+  }
+  @keyframes monkeyBounce {
+    0%, 100% { transform: translateY(0) rotate(-5deg); }
+    40%       { transform: translateY(-14px) rotate(6deg); }
+  }
+
+  /* ────────────────────────────────
+     SECTION 6 — THINGS I LOVE
+  ──────────────────────────────── */
+  #love { text-align: center; }
+  #love > h2 { margin-bottom: 2rem; }
+  .love-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+    gap: 16px;
+    margin-top: 8px;
+  }
+  .love-card {
+    background: var(--glass-b);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    padding: 24px 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px var(--shadow);
+    transition: transform 0.22s, box-shadow 0.22s;
+    cursor: default;
+  }
+  .love-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 14px 36px rgba(219,39,119,0.25);
+  }
+  .love-card .icon { font-size: 2.2rem; margin-bottom: 10px; display: block; }
+  .love-card h3 { font-size: 1rem; color: var(--rose-deep); margin-bottom: 6px; }
+  .love-card p  { font-size: 0.88rem; line-height: 1.6; color: var(--text-mid); max-width: 100%; }
+
+  /* ────────────────────────────────
+     SECTION 7 — PROMISES
+  ──────────────────────────────── */
+  #promises { text-align: center; }
+  #promises .glass { text-align: left; }
+  .promise-list { list-style: none; margin-top: 1.4rem; display: flex; flex-direction: column; gap: 14px; }
+  .promise-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    font-size: clamp(0.95rem, 2.5vw, 1.08rem);
+    line-height: 1.7;
+    color: var(--text-mid);
+  }
+  .promise-list li .icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+
+  /* ────────────────────────────────
+     SECTION 8 — FINAL MESSAGE
+  ──────────────────────────────── */
+  #final {
+    text-align: center;
+    padding-bottom: clamp(80px, 14vw, 160px);
+  }
+  #final h1 {
+    font-size: clamp(1.9rem, 7vw, 3.5rem);
+    margin-bottom: 0.5rem;
+  }
+  #final .from-line {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    color: var(--text-soft);
+    margin: 10px 0 36px;
+  }
+  .final-glass {
+    margin-top: 32px;
+    text-align: left;
+  }
+  .final-glass p + p { margin-top: 1rem; }
+
+  /* ────────────────────────────────
+     EASTER EGG BUTTERFLY
+  ──────────────────────────────── */
+  #egg-butterfly {
+    position: fixed;
+    bottom: 32px;
+    right: 24px;
+    font-size: 2.2rem;
+    cursor: pointer;
+    z-index: 100;
+    animation: eggFloat 3s ease-in-out infinite;
+    filter: drop-shadow(0 2px 12px rgba(244,114,182,0.6));
+    border: none;
+    background: none;
+    padding: 8px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #egg-butterfly:hover { transform: scale(1.3) rotate(15deg); }
+  @keyframes eggFloat {
+    0%, 100% { transform: translateY(0) rotate(-8deg); }
+    50%       { transform: translateY(-12px) rotate(8deg); }
+  }
+
+  /* ── MODAL ── */
+  #egg-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background: rgba(109,40,217,0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s;
+  }
+  #egg-modal.open { opacity: 1; pointer-events: all; }
+  .modal-box {
+    background: linear-gradient(145deg, rgba(255,255,255,0.88), rgba(253,232,249,0.92));
+    border: 1.5px solid rgba(255,255,255,0.7);
+    border-radius: 28px;
+    padding: clamp(32px, 7vw, 56px);
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 80px rgba(219,39,119,0.25);
+    transform: scale(0.88);
+    transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
+  }
+  #egg-modal.open .modal-box { transform: scale(1); }
+  .modal-box h2 { font-size: clamp(1.4rem, 5vw, 2rem); margin-bottom: 1rem; color: var(--rose-deep); }
+  .modal-box p  { margin-bottom: 0.9rem; font-size: clamp(0.95rem, 2.5vw, 1.08rem); }
+  .modal-close {
+    margin-top: 20px;
+    padding: 12px 32px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(135deg, var(--rose), var(--rose-deep));
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 18px rgba(219,39,119,0.35);
+    transition: transform 0.18s;
+  }
+  .modal-close:hover { transform: scale(1.05); }
+
+  /* ── CONFETTI BURST ── */
+  .confetti { position: fixed; pointer-events: none; z-index: 300; top: 50%; left: 50%; font-size: 1.6rem; }
+  .confetti span {
+    position: absolute;
+    animation: confettiFly 1.4s ease-out forwards;
+  }
+  @keyframes confettiFly {
+    0%   { opacity: 1; transform: translate(0,0) scale(1) rotate(0deg); }
+    100% { opacity: 0; transform: var(--fly) scale(0.3) rotate(720deg); }
+  }
+
+  /* ── REVEAL ON SCROLL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── reduced motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- FLOATING PARTICLES -->
+<div id="particles"></div>
+
+<!-- ══════════════════════════════════
+     SECTION 1 — HERO
+══════════════════════════════════ -->
+<section id="hero">
+  <span class="hero-butterfly">🦋</span>
+  <h1>For My Dharshiniiiiiii 💗</h1>
+  <p class="from-line">From your Korangu 🐒 &nbsp;·&nbsp; made with every piece of my heart</p>
+
+  <div class="pulse-ring">
+    <a href="#apology" class="btn-heart">Open My Heart 💗</a>
+  </div>
+
+  <div class="scroll-hint">↓</div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     SECTION 2 — APOLOGY
+══════════════════════════════════ -->
+<section id="apology">
+  <div class="glass reveal">
+    <span class="glow-heart">💗</span>
+    <span class="section-label">an apology from the heart</span>
+    <h2>I'm Sorry, Chlmmm</h2>
+    <p>Words can be so careless. Mine were, and I hate that. I said things that hurt you — the one person in the world I would never want to hurt — and I'm sitting with that heaviness right now as I write this.</p>
+    <p>I'm not going to dress it up in excuses, because you don't deserve excuses. You deserve honesty: <em>I was wrong.</em> The words I chose were thoughtless, and thoughtlessness in love is its own kind of failure.</p>
+    <p>You are someone who gives so much — your warmth, your patience, your heart — and I repaid that with words that stung. That's not okay, and I know it.</p>
+    <p>I'm sorry. Genuinely, deeply, without condition. Not because I want you to stop being upset, but because you deserve to know that it hurt me to hurt you — and because I never want to make you feel like that again.</p>
+    <p>You are my Chlmmm 💗. And I love you more than I'll ever be good enough at saying.</p>
+  </div>
+</section>
+
+<div class="petal-divider">🌸 🦋 🌸</div>
+
+
+<!-- ══════════════════════════════════
+     SECTION 3 — BEACH MEMORIES
+══════════════════════════════════ -->
+<section class="memory-section">
+  <div class="reveal">
+    <span class="memory-emoji">🌊</span>
+    <span class="section-label">our beach memories</span>
+    <h2>Where the Waves Remember Us</h2>
+  </div>
+  <div class="glass reveal">
+    <p>I think about the beach with you and something in me goes very still and very full at the same time. The way the wind moved your hair. The way you laughed at the waves like they were playing a joke just for you.</p>
+    <p>We stood at the edge of the whole ocean and it still felt like you were the biggest thing in the world to me. Salt in the air, the cool sand beneath our feet, and you — just you — making it the most beautiful place I'd ever been.</p>
+    <p>I want to go back. I want to stand there again, beside you, and say nothing, and let the waves say it for me: <em>I'm glad you're here. I'm glad it's you.</em></p>
+    <p>Every time I hear the sea now, I think of you 💗</p>
+  </div>
+</section>
+
+<div class="petal-divider">🌸 🦋 🌸</div>
+
+
+<!-- ══════════════════════════════════
+     SECTION 4 — PARK MEMORIES
+══════════════════════════════════ -->
+<section class="memory-section">
+  <div class="reveal">
+    <span class="memory-emoji">🌳</span>
+    <span class="section-label">our park memories</span>
+    <h2>Our Quiet Little World</h2>
+  </div>
+  <div class="glass reveal">
+    <p>There's something about parks with you that feels completely separate from the rest of life. Like we step through a gate and suddenly time moves slower, softer. The light through the trees, the distant sounds of the world carrying on without us.</p>
+    <p>I love that we can just walk without needing to go anywhere. Just side by side, sometimes talking, sometimes not — and both feel exactly right. Those are the moments I keep going back to when things feel complicated.</p>
+    <p>You make ordinary afternoons feel like something worth remembering. I'll always remember them 🌳💗</p>
+  </div>
+</section>
+
+<div class="petal-divider">🌸 🦋 🌸</div>
+
+
+<!-- ══════════════════════════════════
+     SECTION 5 — KORANGU
+══════════════════════════════════ -->
+<section id="korangu">
+  <span class="monkey-bounce">🐒</span>
+  <span class="section-label">about your korangu</span>
+  <h2>Yes, I'm a Little Stupid Sometimes</h2>
+  <div class="glass reveal">
+    <p>I won't pretend I'm not a korangu 🐒. I have the grace of a monkey swinging from the wrong branch, and the emotional intelligence of one who just discovered something confusing and decided to poke it anyway. I know this.</p>
+    <p>Sometimes I say things before my brain has finished loading. Sometimes I'm clumsy with my words in a way that doesn't match how carefully I hold you in my heart. That gap — between what I feel and what I manage to say — is something I'm working on.</p>
+    <p>But here's what this korangu knows for certain: <em>there is no version of his life that isn't better with his Chlmmm in it.</em> Absolutely none.</p>
+    <p>You got a monkey for a boyfriend. I know. I'm sorry about that too 😅💗 But this monkey adores you completely.</p>
+  </div>
+</section>
+
+<div class="petal-divider">🌸 🦋 🌸</div>
+
+
+<!-- ══════════════════════════════════
+     SECTION 6 — THINGS I LOVE
+══════════════════════════════════ -->
+<section id="love">
+  <span class="section-label reveal">things i love about you</span>
+  <h2 class="reveal">Everything, Actually 💗</h2>
+
+  <div class="love-grid">
+    <div class="love-card reveal">
+      <span class="icon">😄</span>
+      <h3>Your Laugh</h3>
+      <p>It's the best sound in any room. When something genuinely gets you, I forget what I was even doing.</p>
+    </div>
+    <div class="love-card reveal">
+      <span class="icon">🌊</span>
+      <h3>Your Courage</h3>
+      <p>You face things head-on and make it look effortless. You're braver than you give yourself credit for.</p>
+    </div>
+    <div class="love-card reveal">
+      <span class="icon">💬</span>
+      <h3>How You Care</h3>
+      <p>The way you listen. Really listen. People feel seen around you — I feel seen around you.</p>
+    </div>
+    <div class="love-card reveal">
+      <span class="icon">✨</span>
+      <h3>Your Warmth</h3>
+      <p>You make every space feel a little kinder, a little safer. You do that without even trying.</p>
+    </div>
+    <div class="love-card reveal">
+      <span class="icon">🌸</span>
+      <h3>Your Softness</h3>
+      <p>You feel things deeply and that's not weakness — it's one of the most beautiful things about you.</p>
+    </div>
+    <div class="love-card reveal">
+      <span class="icon">🦋</span>
+      <h3>Being Yourself</h3>
+      <p>Fully, unapologetically you. That's the most attractive and wonderful thing a person can be.</p>
+    </div>
+  </div>
+</section>
+
+<div class="petal-divider">🌸 🦋 🌸</div>
+
+
+<!-- ══════════════════════════════════
+     SECTION 7 — PROMISES
+══════════════════════════════════ -->
+<section id="promises">
+  <span class="section-label">what i promise you</span>
+  <h2>My Promise 🦋</h2>
+  <div class="glass reveal">
+    <p>Love without intention is just feeling. I want to love you with intention — so here is what I promise, not as words, but as things I'll actually do:</p>
+    <ul class="promise-list">
+      <li><span class="icon">🧠</span><span>I will think before I speak. Especially about things that matter to you — because your feelings always matter.</span></li>
+      <li><span class="icon">👂</span><span>I will listen — not just wait for my turn to talk. I'll hear what you're actually saying and what you need from me.</span></li>
+      <li><span class="icon">💬</span><span>I will communicate better. I'll say the soft things out loud, not just think them. You deserve to hear them.</span></li>
+      <li><span class="icon">🌱</span><span>I will learn from this. Not just say I will — but actually remember, and be different because of it.</span></li>
+      <li><span class="icon">💗</span><span>I will choose you, again and again. Every time, without hesitation, I will choose you.</span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="petal-divider">🌸 🦋 🌸</div>
+
+
+<!-- ══════════════════════════════════
+     SECTION 8 — FINAL MESSAGE
+══════════════════════════════════ -->
+<section id="final">
+  <div class="reveal">
+    <span class="hero-butterfly" style="font-size: clamp(2rem, 8vw, 5rem);">🦋</span>
+    <h1>I'm Sorry, My Chlmmm 💗</h1>
+    <p class="from-line">Forever your Korangu 🐒💗</p>
+  </div>
+
+  <div class="glass final-glass reveal">
+    <p>This little world — the butterflies, the pink, every word on this page — I built it for you. Because you deserve to be shown you're loved, not just told. Because when I fail you with my words, I want to come back with something that says it better.</p>
+    <p>You are my Dharshiniiiiiii. My Chlmmm. The person who makes beaches more beautiful and parks more peaceful and ordinary Tuesdays feel like something precious.</p>
+    <p><em>I love you. I'm sorry. I'll do better. And I'll keep choosing you — every single day.</em></p>
+    <p style="text-align:center; margin-top: 1.4rem; font-size: 1.4rem;">💗 🦋 💗 🐒 💗 🦋 💗</p>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     EASTER EGG — SECRET BUTTERFLY
+══════════════════════════════════ -->
+<button id="egg-butterfly" aria-label="A secret butterfly 🦋" title="Tap me…">🦋</button>
+
+<div id="egg-modal" role="dialog" aria-modal="true" aria-labelledby="egg-title">
+  <div class="modal-box">
+    <h2 id="egg-title">You found our secret 🦋💗</h2>
+    <p>This butterfly was waiting just for you, Chlmmm — because some things are too precious for everyone to see.</p>
+    <p><em>"In every lifetime, in every version of this world, I would still find my way to you. You are not a coincidence. You are my choice."</em></p>
+    <p>Your Korangu 🐒 hid this here because he knew you'd look. And because he wants you to know — even in the quiet corners, even in the small things — he's thinking of you.</p>
+    <p style="font-size: 1.4rem; text-align:center; margin-top: 6px;">💗 🦋 🐒 🦋 💗</p>
+    <button class="modal-close" id="modal-close-btn">Close with love 💗</button>
+  </div>
+</div>
+
+
+<script>
+// ── PARTICLES ──────────────────────────────────
+const particleContainer = document.getElementById('particles');
+const symbols = ['🦋','💗','🌸','✨','🌺','💕','🩷'];
+let particleCount = 0;
+
+function spawnParticle() {
+  if (particleCount > 24) return;
+  const el = document.createElement('div');
+  el.className = 'particle';
+  el.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+  el.style.left = Math.random() * 100 + 'vw';
+  const dur = 8 + Math.random() * 10;
+  const delay = Math.random() * -14;
+  el.style.animationDuration = dur + 's';
+  el.style.animationDelay = delay + 's';
+  el.style.fontSize = (10 + Math.random() * 14) + 'px';
+  particleContainer.appendChild(el);
+  particleCount++;
+  el.addEventListener('animationiteration', () => {
+    el.style.left = Math.random() * 100 + 'vw';
+  });
+}
+for (let i = 0; i < 18; i++) spawnParticle();
+
+
+// ── SCROLL REVEAL ─────────────────────────────
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); }
+  });
+}, { threshold: 0.12 });
+reveals.forEach(r => revealObserver.observe(r));
+
+
+// ── EASTER EGG ────────────────────────────────
+const eggBtn   = document.getElementById('egg-butterfly');
+const eggModal = document.getElementById('egg-modal');
+const closeBtn = document.getElementById('modal-close-btn');
+
+function openModal() {
+  eggModal.classList.add('open');
+  closeBtn.focus();
+  launchConfetti();
+}
+function closeModal() {
+  eggModal.classList.remove('open');
+  eggBtn.focus();
+}
+
+eggBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+eggModal.addEventListener('click', e => { if (e.target === eggModal) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+
+// ── CONFETTI BURST ────────────────────────────
+function launchConfetti() {
+  const container = document.createElement('div');
+  container.className = 'confetti';
+  document.body.appendChild(container);
+  const bits = ['💗','🦋','✨','🌸','🩷','💕','🌺'];
+  for (let i = 0; i < 18; i++) {
+    const s = document.createElement('span');
+    s.textContent = bits[Math.floor(Math.random() * bits.length)];
+    const angle = Math.random() * Math.PI * 2;
+    const dist  = 80 + Math.random() * 140;
+    const tx    = Math.cos(angle) * dist + 'px';
+    const ty    = Math.sin(angle) * dist + 'px';
+    s.style.setProperty('--fly', `translate(${tx},${ty})`);
+    s.style.animationDelay = (Math.random() * 0.3) + 's';
+    container.appendChild(s);
+  }
+  setTimeout(() => container.remove(), 2000);
+}
+</script>
+</body>
+</html>
